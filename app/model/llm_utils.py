@@ -274,7 +274,7 @@ def create_vector_db(service=None, collection_name=None, dim=None):
                 table_name=collection_name,
             )         
         except Exception as e:
-            err = f"Failed at creating Embedding model object from {service}. Details: {e}."
+            err = f"Failed at creating vector database model object from {service}. Details: {e}."
             return None, err
     
     message = f"Successfully created vector database object from {service}"
