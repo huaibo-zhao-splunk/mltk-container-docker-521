@@ -1,0 +1,135 @@
+{
+    "llm": {
+        "ollama": [{
+            "is_configured": 1,
+            "model": null,
+            "base_url": "http://ollama:11434"
+        }],
+        "azure_openai": [{
+            "is_configured": 1,
+            "model": "gpt3.5",
+            "deployment_name": "mygpt1",
+            "api_key": "XXXXXXXXXXX",
+            "azure_endpoint": "https:xxxx.com",
+            "api_version": "1-1-1"
+        },
+        {
+            "is_configured": 1,
+            "model": "gpt4.0",
+            "deployment_name": "mygpt2",
+            "api_key": "XXXXXXXXXXX",
+            "azure_endpoint": "https:xxxx.com",
+            "api_version": "1-1-2"
+        }
+        ],
+        "openai": [{
+            "is_configured": 0,
+            "model": null,
+            "api_key": null
+        }],
+        "bedrock": [{
+            "is_configured": 0,
+            "model": null,
+            "aws_access_key_id": null,
+            "aws_secret_access_key": null,
+            "aws_session_token": null,
+            "region_name": null
+        }],
+        "gemini": [{
+            "is_configured": 0,
+            "model": null,
+            "api_key": null
+        }]
+    },
+    "embedding_model": {
+        "huggingface": [
+            {
+            "is_configured": 1,
+            "model_name": "all-MiniLM-L6-v2",
+            "output_dims": 384
+        },
+          {
+            "is_configured": 1,
+            "model_name": "intfloat/multilingual-e5-large",
+            "output_dims": 1024
+        }  
+        ],
+        "ollama": [{
+            "is_configured": 0,
+            "model_name": null,
+            "base_url": null,
+            "output_dims": null
+        }],
+        "azure_openai": [{
+            "is_configured": 0,
+            "model": null,
+            "deployment_name": null,
+            "api_key": null,
+            "azure_endpoint": null,
+            "api_version": null,
+            "output_dims": null
+        }],
+        "openai": [{
+            "is_configured": 0,
+            "model": null,
+            "api_key": null,
+            "output_dims": null
+        }],
+        "bedrock": [{
+            "is_configured": 0,
+            "model_name": null,
+            "aws_access_key_id": null,
+            "aws_secret_access_key": null,
+            "aws_session_token": null,
+            "region_name": null,
+            "aws_profile": null,
+            "output_dims": null
+        }],
+        "gemini": [{
+            "is_configured": 0,
+            "model_name": null,
+            "api_key": null,
+            "output_dims": null
+        }]
+    },
+    "vector_db": {
+        "milvus": [{
+            "is_configured": 1,
+            "uri": "http://milvus-standalone:19530",
+            "token": ""
+        }],
+        "pinecone": [{
+            "is_configured": 0,
+            "api_key": null,
+            "cloud": null,
+            "region": null,
+            "metric": null
+        }],
+        "alloydb": [{
+            "is_configured": 0,
+            "project_id": null,
+            "region": null,
+            "cluster": null,
+            "instance": null,
+            "database": null,
+            "user": null,
+            "password": null
+        }]
+    },
+    "graph_db": {
+        "neo4j": [{
+            "is_configured": 0,
+            "username": null,
+            "password": null,
+            "url": null,
+            "database": null
+        }],
+        "dgraph": [{
+            "is_configured": 0,
+            "username": null,
+            "password": null,
+            "url": null,
+            "namespace": null
+        }]
+    }
+}
